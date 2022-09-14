@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="signin.css">
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+
+        <div class="header2">
+            <div class="logoDiv">
+                <p class="logo" id="homeRedirect">NORDSTROM</p>
+            </div>
+                <div class="search">
+                    <input type="text" placeholder="search for product" id="search">
+                </div>
+                <select name="sign in" id="signIn">
+                    <option id="signInOption" onclick="signIn()">Sign In</option>
+                </select>
+                <a href="cart.html">
+                <div class="navShopIcon" onclick="shoppingCart()">
+                    <img class="carticon" src="https://img.icons8.com/ios/2x/shopping-cart-loaded--v2.gif">
+                    <p id="navCartCount">0</p>
+                </div>
+            </a>
+            </div>
+    </div> 
+    <hr>
+       <div class="navList">
+                <ul class="listStyle">
+                    <li id="sale">Sale</li>
+                    <li id="women">Women</li>
+                    <li id="men">Men</li>
+                    <li id="kids">Kids</li>
+                    <li id="youngadults">Young Adults</li>
+                    <li id="activeWear">Activewear</li>
+                    <li id="home">Home</li>
+                    <li id="beauty">Beauty</li>
+                    <li id="designer">Designer</li>
+                    <li id="gifts">Gifts</li>
+                    <li id="brands">Brands</li>
+                </ul>
+            </div> 
+            
+   
+        <form id="form">
+            <h4>Sign In | Create Account</h4>
+            <p>Enter your email to get started.</p>
+            <h5>Email</h5>
+            <input type="text" id="userEmail">
+           <p>By tapping Next, you agree to our Privacy Policy and Terms & Conditions.</p>
+            <input type="submit" value="Next" id="click">
+        </form>        
+   
+</body>
+
+<script>
+  
+  document.querySelector("#form").addEventListener("submit", events);
+    var  arr =JSON.parse(localStorage.getItem("userData1"))  || [];
+
+  function events() {
+        event.preventDefault();
+      
+        uemail = document.querySelector("#userEmail").value;
+        
+
+if(JSON.parse(localStorage.getItem("userData1"))==null)
+ {
+    arr.push(uemail)
+    localStorage.setItem("userData1",JSON.stringify(arr));
+   
+    window.location.href='finalcreate.html';
+ }
+else{
+   var userinfo=JSON.parse(localStorage.getItem("userData1"));
+  
+   for(var i=0;i<userinfo.length;i++)
+   {
+       if(userinfo[i]==uemail)
+       {
+           window.location.href='password.html';
+          
+       }
+       else{
+           arr.push(uemail);
+           localStorage.setItem("userData1",JSON.stringify(arr));
+           window.location.href='finalcreate.html';
+       }
+   }
+}
+
+
+}
+</script>
+</html>

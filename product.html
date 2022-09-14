@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="productStyle.css">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Product Details</title>
+</head>
+<body>
+    <div id="headerDiv">
+        <div class="header1">
+            <p><span class="saleSpan">Mother's Day is this Sunday! Get your gift in tme with free curbside pickup. 
+                <button class="previewButton">Gifts</button></p>
+            <div class="india">
+                <img src="https://n.nordstrommedia.com/alias/IN.gif" />
+                <p>India</p>
+            </div>
+        </div>
+        <div class="header2">
+            <div class="logoDiv">
+                <p class="logo" id="homeRedirect">NORDSTROM</p>
+            </div>
+                <div class="search">
+                    <input type="text" placeholder="search for product" id="search">
+                </div>
+                <a href="signin.html">
+                <select name="sign in" id="signIn">
+                    <option id="signInOption" onclick="signIn()">Sign In</option>
+                </select> </a>
+                <a href="cart.html">
+                <div class="navShopIcon" onclick="shoppingCart()">
+                    <img src="https://img.icons8.com/ios/2x/shopping-cart-loaded--v2.gif">
+                    <p id="navCartCount">0</p>
+                </div>
+            </a>
+            </div>
+    </div> 
+    <hr>
+       <div class="navList">
+                <ul class="listStyle">
+                    <li id="sale">Sale</li>
+                    <li id="women">Women</li>
+                    <li id="men">Men</li>
+                    <li id="kids">Kids</li>
+                    <li id="youngadults">Young Adults</li>
+                    <li id="activeWear">Activewear</li>
+                    <li id="home">Home</li>
+                    <li id="beauty">Beauty</li>
+                    <li id="designer">Designer</li>
+                    <li id="gifts">Gifts</li>
+                    <li id="brands">Brands</li>
+                </ul>
+            </div> 
+            
+    <div class="hero">
+      <div class="row">
+          <div class="col">
+              <div class="slider">
+                  
+                  <div class="preview">
+                    <img id="imagBox" src="https://rukminim1.flixcart.com/image/800/960/l0tweq80/top/b/t/q/xl-dc-913-black-doriya-original-imagcgz3y8xvrkz6.jpeg?q=50" alt="">
+                  </div>
+              </div>
+             </div>
+          <div class="col"> 
+              <div class="content">
+                  <p class="brand"> Varanga</p>
+                  <h2 id="show"></h2>
+                  <div class="rating">
+                    <span class="fa fa-star checked"></span>
+                       <span class="fa fa-star checked"></span>
+                       <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                       <span class="fa fa-star"></span> 
+                  </div>
+                  <p class="price"></p>
+                  <p>Size: <select name="size" id="size">
+                    <option value="select size">Select Size</option>
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="Large">Large</option>
+
+                </select>  </p>
+                <p>Quantity:<input type="text" value="1" id="quan"> </p>
+
+
+
+
+                <button type="button" id="bag">
+                    <i class="fa fa-shopping-cart"></i>
+                  Add to Bag</button>
+              </div>
+            </div>
+      </div>
+       <div class="related">
+           <h2>related items</h2>
+           <div class="row">
+               <div class="colm">
+                   <div class="item">
+                       <img src="https://rukminim1.flixcart.com/image/432/518/knj7wcw0/top/p/s/q/s-india-0351-sana-fashions-original-imag27y4z6fxhuuf.jpeg?q=70" alt="">
+                       <div class="details">
+                           <p>Women Green solid Top</p>
+                           <div class="rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                             <span class="fa fa-star-half-o"></span>
+                           </div>
+                          <p> USD $120.00 </p>
+                       </div>
+                   </div>
+               </div>
+               <div class="colm">
+                <div class="item">
+                    <img src="https://rukminim1.flixcart.com/image/452/542/kr6oeq80/bra/j/i/q/lightly-padded-32-strapless-yes-backless-lotus-bra-black-yumina-original-imag5fayxhxpwjkz.jpeg?q=50" alt="">
+                    <div class="details">
+                        <p>Women Black Sexy Bra </p>
+                        <div class="rating">
+                         <span class="fa fa-star checked"></span>
+                         <span class="fa fa-star checked"></span>
+                         <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star-half-o"></span>
+                        </div>
+                       <p> USD $120.00 </p>
+                    </div>
+                </div>
+               </div>
+               <div class="colm">
+                <div class="item">
+                    <img src="https://rukminim1.flixcart.com/image/800/960/kwxv98w0/swimsuit/t/0/y/34-bikni-set-singel-red-achiever-original-imag9gyfvkehggfw.jpeg?q=50" alt="">
+                    <div class="details">
+                        <p>Women Bikini set</p>
+                        <div class="rating">
+                         <span class="fa fa-star checked"></span>
+                         <span class="fa fa-star checked"></span>
+                         <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star-half-o"></span>
+                        </div>
+                       <p> USD $120.00 </p>
+                    </div>
+                </div>
+               </div>
+               <div class="colm">
+                <div class="item">
+                    <img src="https://rukminim1.flixcart.com/image/452/542/knunf680/t-shirt/6/v/r/m-crp-gt3-viral-trend-original-imag2gy8uafdhvnw.jpeg?q=50" alt="">
+                    <div class="details">
+                        <p>Women Green solid Top</p>
+                        <div class="rating">
+                         <span class="fa fa-star checked"></span>
+                         <span class="fa fa-star checked"></span>
+                         <span class="fa fa-star checked"></span>
+                          <span class="fa fa-star-half-o"></span>
+                        </div>
+                       <p> USD $120.00 </p>
+                    </div>
+                </div>
+               </div>
+           </div>
+       </div>
+
+
+
+    </div>
+</body>
+</html>
+<script>
+  
+
+    var proarr = JSON.parse(localStorage.getItem("userObj1"))
+    console.log(proarr)
+    var em = document.querySelector("#show")
+      em.innerText = proarr[0].name
+
+      var en = document.querySelector("#imagBox")
+      en.src = proarr[0].avatar
+
+      var ez = document.querySelector(".price")
+      ez.innerText = proarr[0].price
+
+      document.querySelector("#bag").addEventListener("click", events);
+      function events() {
+        event.preventDefault();
+        window.location.href="cart.html"
+
+        var objuser = {
+            size :document.querySelector("#size").value,
+            quan :document.querySelector("#quan").value
+        }
+      
+        var obarr2 = [] 
+     obarr2.push(objuser)
+     localStorage.setItem("userObj3", JSON.stringify(obarr2));
+     console.log(obarr2)
+      }
+    
+
+
+</script>

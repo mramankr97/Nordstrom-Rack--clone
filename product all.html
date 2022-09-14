@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cart.css">
+    <style>
+        #choice{
+         display: flex;
+         justify-content: space-around;
+     }
+     .red{
+         color: red;
+     }
+     .blue{
+         color: blue;
+     }
+     #choice li  {
+         list-style: none;
+         
+     }
+     #choice li a {
+         text-decoration: none;
+     }
+
+
+
+     #container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, auto);
+        gap: 20px;
+      }
+      #container>div{
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        border-radius: 10px;
+        margin-top: 50px;
+        padding: 30px;
+      }
+      img {
+         
+        width: 100%;
+        height: 80%;
+      }
+
+
+
+     
+#pr{
+    height:auto;
+    width:100%;
+    margin-top:50px;
+    display: flex;
+    text-align-last: left;
+   background-color:rgb(222, 219, 219);
+   padding: 20px;
+   
+}
+#fst{
+    height: 98%;
+    width: 70%;
+    
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(1,400px);
+    gap: 10px;
+
+    
+
+}
+
+#fst p{
+    line-height: 30px;
+    font-weight: lighter;
+    font-size: medium;
+    color: rgb(56, 55, 55);
+}
+#scnd{
+    height: 98%;
+    width: 20%;
+    
+    margin:auto
+}
+#scnd>div>img{
+    height: 60%;
+    width:80%
+}
+#pr p:hover{
+   color: rgb(19, 106, 246);
+   cursor: pointer;
+} 
+    </style>
+</head>
+<body>
+  <div id="headerDiv">
+    <div class="header1">
+        <p><span class="saleSpan">Mother's Day is this Sunday! Get your gift in tme with free curbside pickup. 
+            <button class="previewButton">Gifts</button></p>
+        <div class="india">
+            <img src="https://n.nordstrommedia.com/alias/IN.gif" />
+            <p>India</p>
+        </div>
+    </div>
+    <div class="header2">
+        <div class="logoDiv">
+            <p class="logo" id="homeRedirect">NORDSTROM</p>
+        </div>
+            <div class="search">
+                <input type="text" placeholder="search for product" id="search">
+            </div>
+            <a href="signin.html">
+            <select name="sign in" id="signIn">
+                <option id="signInOption" onclick="signIn()">Sign In</option>
+            </select> </a>
+            <a href="cart.html">
+            <div class="navShopIcon" onclick="shoppingCart()">
+                <img src="https://img.icons8.com/ios/2x/shopping-cart-loaded--v2.gif">
+                <p id="navCartCount">0</p>
+            </div>
+        </a>
+        </div>
+</div> 
+<hr>
+   <div class="navList">
+            <ul class="listStyle">
+                <li id="sale">Sale</li>
+                <li id="women">Women</li>
+                <li id="men">Men</li>
+                <li id="kids">Kids</li>
+                <li id="youngadults">Young Adults</li>
+                <li id="activeWear">Activewear</li>
+                <li id="home">Home</li>
+                <li id="beauty">Beauty</li>
+                <li id="designer">Designer</li>
+                <li id="gifts">Gifts</li>
+                <li id="brands">Brands</li>
+            </ul>
+        </div> 
+
+
+
+        <div id="container"></div>
+
+
+
+        <div id="pr">
+            <div id="fst">
+                <div>
+                    <b>Customer Service</b>
+                    <p>Order Status</p>
+                    <p>Guest Status</p>
+                    <p>Shipping & Return Policy</p>
+                    <p>Gift Cards</p>
+                    <p>FAQ</p>
+                    <p>Contact Us</p>
+                </div>
+                <div>
+                    <b>About Us</b>
+                    <p>About Our Brand</p>
+                    <p>The Noddy Club</p>
+                    <p>Store Locator</p>
+                    <p>All Brands</p>
+                    <p>Carrers</p>
+                    <p>Get Email Updates</p>
+                    <p>Nordstrom Blog</p>
+                    <p>Nordy Product</p>
+                </div>
+                <div>
+                    <b>Nordstrom Rock & The Community</b>
+                    <p>Corporate Social Responsibility</p>
+                    <p>Diversity, Inclusion & Belonging</p>
+                    <p>Big Brothers Big Sisters</p>
+                    <p>Donate Clothes</p>
+                </div>
+                <div>
+                    <b>Nordstrom Card</b>
+                    <P>Apply for a Nordstrom Card</P>
+                    <P>Pay My Bill</P>
+                    <P>Manage my Nordstrom Card</P>
+                </div>
+                <div>
+                    <b>Nordstrom, Inc.</b>
+                    <P>Nordstrom</P>
+                    <P>Nordstrom Canada</P>
+                    <P>Trank Club</P>
+                    <P>Hautel Look</P>
+                    <P>Investors Relations</P>
+                    <P>Press Releaser</P>
+                    <P>Nordstrom Media Network</P>
+                </div>
+            </div>
+            <div id="scnd">
+               <div style="height: 60px;width: 50px; margin-top: 70px;"> <img src="https://i.pinimg.com/originals/20/27/3c/20273cfda041b47e89e057a4c2296928.png" alt=""></div>
+               <div> <p>Download Our Apps</p></div>
+                <div>
+                    <img style="height: 80px; width: 100px;margin-top: 50px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDg4yzOpq68QNBhgHuNyXdSbgZbLxSFyHzUw&usqp=CAU" alt="">
+                </div>
+            </div>
+          </div>
+
+</body>
+</html>
+<script>
+    
+var Data = [
+    {
+      avatar:
+        "https://rukminim2.flixcart.com/image/580/696/k0flmkw0/top/7/u/n/l-tttp003124-tokyo-talkies-original-imafk8ync6umbw2z.jpeg?q=50",
+      name: "Tokyo Talkies",
+      price:"$32 (50%off)",
+      cart:"Add To Cart"
+    },
+    {
+      avatar:
+        "https://rukminim2.flixcart.com/image/580/696/klphn680/top/0/h/d/xl-regular-top-fab-star-original-imagyry2a7esubfg.jpeg?q=50",
+        name: "Silkova",
+      price:"$66 (37% off)",
+      cart:"Add To Cart"
+    },
+    {
+      avatar:
+        "https://rukminim2.flixcart.com/image/580/696/kksmikw0/dress/k/a/g/l-bcl-seq-brucella-original-imagy2gc9vhpz6qn.jpeg?q=50",
+        name: "Shopping Station",
+      price:"$59 (35% off)",
+      cart:"Add To Cart"
+    },
+    {
+      avatar:
+        "https://rukminim2.flixcart.com/image/580/696/jwkzwy80/top/e/d/t/m-tttp002691-tokyo-talkies-original-imafh8cqdnubs5ra.jpeg?q=50",
+        name: "Tokyo Talkies",
+      price:"$42 (50%off)",
+      cart:"Add To Cart"
+    },
+    {
+      avatar:
+        "https://rukminim2.flixcart.com/image/580/696/kkwwu4w0/dress/r/x/n/xxl-lucy-051-purvaja-original-imagy5zsuqya7jyh.jpeg?q=50",
+      name: "Purvaja",
+      price:"$66 (40% off)",
+      cart:"Add To Cart"
+    },
+    {
+      avatar:
+        "https://rukminim2.flixcart.com/image/580/696/kzrbiq80/jean/s/r/h/28-mss22wjn146-metronaut-original-imagbp8psugyygve.jpeg?q=50",
+        name: "Style fit",
+      price:"$37 (55% off)",
+      cart:"Add To Cart"
+    },
+    {
+      avatar:
+        "https://rukminim1.flixcart.com/image/800/960/l0tweq80/top/b/t/q/xl-dc-913-black-doriya-original-imagcgz3y8xvrkz6.jpeg?q=50",
+        name: "Black Collection",
+      price:"$42 (30%off)",
+      cart:"Add To Cart"
+    },
+    {
+      avatar:
+        "https://rukminim2.flixcart.com/image/880/1056/jua4djk0/night-dress-nighty/d/3/h/free-ssn5795-shoppinng-station-original-imaffavbhfkf5xys.jpeg?q=50",
+        name: "Women Nighty",
+      price:"$30  (40%off)",
+      cart:"Add To Cart"
+    },
+    {
+      avatar:
+        "https://rukminim2.flixcart.com/image/580/696/kq18n0w0/dress/u/a/g/l-siri-turtle-purvaja-original-imag44zqrrnxcfbp.jpeg?q=50",
+      name: "Tornandzo",
+      price:"$62 (57%off)",
+      cart:"Add To Cart"
+    },
+    {
+      avatar:
+        "https://rukminim2.flixcart.com/image/580/696/kfpq5jk0-0/kurta/r/z/a/l-kast101we-majestic-man-original-imafw49um5uzgrg3.jpeg?q=50",
+        name: "KSH Trendz",
+      price:"$45 (40% off)",
+      cart:"Add To Cart"
+    },
+    {
+      avatar:
+        "https://rukminim2.flixcart.com/image/580/696/kmqn3bk0/kurta/o/z/z/m-sws2905-allan-peter-original-imagfkmxmzmvzsjw.jpeg?q=50",
+        name: "Alan Peter",
+      price:"$61 (56% off)",
+      cart:"Add To Cart"
+    },
+    {
+      avatar:
+        "https://rukminim2.flixcart.com/image/580/696/k1118cw0/jean/w/z/7/32-10064487-roadster-original-imafkzpjzzerxcgf.jpeg?q=50",
+        name: "Bottom wear",
+      price:"$68 (51% off)",
+      cart:"Add To Cart"
+    },
+    {
+      avatar:
+        "https://rukminim2.flixcart.com/image/580/696/kfpq5jk0-0/kurta/n/x/v/m-kast110md-majestic-man-original-imafw49uzzh56bg7.jpeg?q=50",
+      name: "Majestic",
+      price:"$64 (52% off)",
+      cart:"Add To Cart"
+    },
+    {
+      avatar:
+        "https://rukminim2.flixcart.com/image/580/696/kyyqpow0/t-shirt/l/t/n/l-t67-wrwh-eyebogler-original-imagb2zyfxb3gg3g.jpeg?q=50",
+        name: "Smartees",
+      price:"$54 (60% off)",
+      cart:"Add To Cart"
+    },
+    {
+      avatar:
+        "https://rukminim2.flixcart.com/image/580/696/k01b8280/kurta/m/z/w/s-mens-kurta-cotton-green-tap-in-original-imafjwhvmms9wbck.jpeg?q=50",
+        name: "Tap In",
+      price:"$60 (40%off)",
+      cart:"Add To Cart"
+    },
+    {
+      avatar:
+        "https://rukminim2.flixcart.com/image/580/696/kkfrjww0/t-shirt/h/1/t/l-t312-cgblwh-new-eyebogler-original-imafzs5hrjgzsfpr.jpeg?q=50",
+        name: "Eye Bogler",
+      price:"$69 (46% off)",
+      cart:"Add To Cart"
+    },
+   
+  ];
+  Data.forEach(function (elem) {
+      var box = document.createElement("div");
+      var product = document.createElement("img");
+      product.setAttribute("src", elem.avatar);
+      var product_name = document.createElement("h3");
+      product_name.innerText = elem.name;
+      var product_price = document.createElement("p");
+      product_price.innerText = elem.price;
+
+      var product_cart = document.createElement("button");
+      product_cart.innerText = elem.cart;
+      product_cart.addEventListener("click", function () {
+          cart(elem);
+        });
+     
+      box.append(product, product_name, product_price,product_cart);
+      document.querySelector("#container").append(box);
+    });
+    function cart(elem){
+    
+      window.location.href="product.html";
+     var obarr = [] 
+     obarr.push(elem)
+     localStorage.setItem("userObj1", JSON.stringify(obarr));
+     console.log(obarr)
+    }
+</script>

@@ -1,0 +1,65 @@
+#form{
+    width: 24%;
+    height: 430px;
+    /* border: 1px solid black; */
+    margin: auto;
+    /* margin-left: 900px; */
+    padding: 0px 5px 10px 10px;
+}
+
+h4{
+    font-family: Brandon Text,Arial,sans-serif;
+    font-weight: 100;
+    line-height: 0;    
+    color: #393939;
+    font-size: 27px;
+}
+
+
+#form>p{
+    font-size: 12px;
+}
+h5{
+    font-weight: 700;
+    line-height: 16px;
+    margin-bottom: 8px;
+    vertical-align: top;
+    color: #393939;
+    font-family: Brandon Text,Arial,sans-serif;
+}
+input{
+    width: 98%;
+    height: 35px;
+    font-size: 15px;
+}
+#click{
+    width:99%;
+    height: 40px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+}
+
+#click:hover{
+    background-color: rgb(50, 46, 46);
+    color: white;
+    border: 1px solid rgb(59, 59, 168);
+    cursor: pointer;
+} 
+#acc{
+    display: flex;
+    gap:5px;
+    font-size: 18px;
+}
+#acc >p{
+    font-family: Brandon Text,Arial,sans-serif;
+    font-weight: 400;
+    line-height: 0;
+}
+a{
+    color: teal;
+    font-family: Brandon Text,Arial,sans-serif;
+    font-weight: 400;
+    margin-top: 7px;
+}

@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="finalcreate.css">
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+   
+        <div class="header2">
+            <div class="logoDiv">
+                <p class="logo" id="homeRedirect">NORDSTROM</p>
+            </div>
+                <div class="search">
+                    <input type="text" placeholder="search for product" id="search">
+                </div>
+                <select name="sign in" id="signIn">
+                   <a href="\signin.html"><option id="signInOption">Sign In | Create account</option> </a> 
+                </select>
+                <a href="cart.html">
+                <div class="navShopIcon">
+                    <img class="carticon" src="https://img.icons8.com/ios/2x/shopping-cart-loaded--v2.gif">
+                    <p id="navCartCount">0</p>
+                </div>
+            </a>
+            </div>
+    </div> 
+    <hr>
+       <div class="navList">
+                <ul class="listStyle">
+                    <li id="sale">Sale</li>
+                    <li id="women">Women</li>
+                    <li id="men">Men</li>
+                    <li id="kids">Kids</li>
+                    <li id="youngadults">Young Adults</li>
+                    <li id="activeWear">Activewear</li>
+                    <li id="home">Home</li>
+                    <li id="beauty">Beauty</li>
+                    <li id="designer">Designer</li>
+                    <li id="gifts">Gifts</li>
+                    <li id="brands">Brands</li>
+                </ul>
+            </div> 
+    
+        <form id="form">
+            <img src="..\images\create.png" alt="">
+           
+            <p>*Requried</p>
+            <h5>Email</h5>
+            <p id="show"></p>
+            <h5>First Name*</h5>
+            <input type="text" id="firstName">
+            <h5>Last Name*</h5>
+            <input type="text" id="lastName">
+            <h5>Create Password*</h5>
+            <input type="text" id="password">
+            <p id="p2">By creating an account, you agree to our Privacy Policy, and Terms & Conditions.</p> 
+            <input type="submit" value="Create Account" id="next">
+        </form>        
+   
+</body>
+</html>
+<script>
+      document.querySelector("#form").addEventListener("submit", usersubmit);
+      var getarr = JSON.parse(localStorage.getItem("userData1"))
+      var em = document.querySelector("#show")
+      em.innerText = getarr[getarr.length-1]
+
+    var userDetail =JSON.parse(localStorage.getItem("userData2"))  || [];
+
+    function usersubmit() {
+      event.preventDefault();
+      var dataObj={
+          FirstName:document.querySelector("form").firstName.value,
+          LastName:document.querySelector("form").lastName.value,
+          password:document.querySelector("form").password.value,
+      };
+    
+       userDetail.push(dataObj);
+           localStorage.setItem("userData2", JSON.stringify(userDetail));
+            console.log(userDetail);
+
+      window.location.href="finalSignUp.html";
+    };
+</script>

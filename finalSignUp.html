@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="finalSignup.css">
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <div class="header2">
+        <div class="logoDiv">
+            <p class="logo" id="homeRedirect">NORDSTROM</p>
+        </div>
+            <div class="search">
+                <input type="text" placeholder="search for product" id="search">
+            </div>
+            <select name="sign in" id="signIn">
+               <a href="\signin.html"><option id="signInOption">Sign In | Create account</option> </a> 
+            </select>
+            <a href="cart.html">
+            <div class="navShopIcon">
+                <img class="carticon" src="https://img.icons8.com/ios/2x/shopping-cart-loaded--v2.gif">
+                <p id="navCartCount">0</p>
+            </div>
+        </a>
+        </div>
+</div> 
+<hr>
+   <div class="navList">
+            <ul class="listStyle">
+                <li id="sale">Sale</li>
+                <li id="women">Women</li>
+                <li id="men">Men</li>
+                <li id="kids">Kids</li>
+                <li id="youngadults">Young Adults</li>
+                <li id="activeWear">Activewear</li>
+                <li id="home">Home</li>
+                <li id="beauty">Beauty</li>
+                <li id="designer">Designer</li>
+                <li id="gifts">Gifts</li>
+                <li id="brands">Brands</li>
+            </ul>
+        </div> 
+    <div id="final">
+        <h2>Welcome!</h2>
+        <p>Use your new account to shop at:</p>
+<div id="logo">
+    <img id="logo1" src="data:image/png;base64,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" alt="">
+    <img id="logo2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJl5CLRsmA7ZyPwPvQkwHOjhLIchdhmlrqJg&usqp=CAU" alt="">
+     <h3 id="name">Robin</h3>
+</div>
+      <a href="index.html"> <button id="shopnow">Shop Now</button></a>
+        <hr>
+        <h3>Call us to update your Nordy Club account</h3>
+        <p>Looks like we might have the right info for your account. Give us a call at 1.888.665.8779, and we'll sort it out for you.</p>
+    </div>
+</body>
+<script>
+     var nme = JSON.parse(localStorage.getItem("userData2"))
+     var em = document.querySelector("#name")
+      em.innerText = nme[nme.length-1].FirstName
+
+     
+   var emn = document.querySelector("#signInOption")
+    emn.innerText = "Hii "+nme[nme.length-1].FirstName  
+
+</script>
+</html>
