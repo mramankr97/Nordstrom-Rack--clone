@@ -1,7 +1,5 @@
 # Nordstrom-Rack--clone
-deploy link
-
-<!--  https://melodious-kashata-06d8eb.netlify.app-->
+https://visionary-cheesecake-4a9cb2.netlify.app/
 
 <h3>An American e-commerce website for buying products for men’s, women’s, and kids’ accessories.</h3>
 <h4>Features:</h4>
