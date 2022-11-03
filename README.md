@@ -1,7 +1,7 @@
 # Nordstrom-Rack--clone
 https://visionary-cheesecake-4a9cb2.netlify.app/
 
-<h3>An American e-commerce website for buying products for men’s, women’s, and kids’ accessories.</h3>
+<h3>An American e-commerce website for buying products for men, women, and kids accessories.</h3>
 <h4>Features:</h4>
 <p>Social Sign-in/Sign-up
 <p>Product Gallery</p>
