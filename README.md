@@ -11,5 +11,5 @@ https://visionary-cheesecake-4a9cb2.netlify.app/
 <h3>Areas of responsibility:</h3>
 <p>Create a website login and signup page.</p>
 
-<p>A collaborative project built by a team of five was executed in six days.</p>
+<p>A collaborative project built by a team of five was executed in five days.</p>
 
