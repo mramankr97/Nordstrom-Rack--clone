@@ -9,7 +9,7 @@ https://visionary-cheesecake-4a9cb2.netlify.app/
 <p>Payment</p>
 <div><h4>Tech Stack: HTML | CSS | Javascript</h4></div>
 <h3>Areas of responsibility:</h3>
-<p>Create a website login and signup page.</p>
+<p>Create a website Home page and signup page.</p>
 
 <p>A collaborative project built by a team of five was executed in five days.</p>
 
